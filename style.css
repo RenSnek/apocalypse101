@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+* {
+	font-family: 'Lexend', sans-serif;
+}
+
+body {
+	margin: 0;
+	background: #F4ECD6;
+	padding: 10px;
+}
+
+.oneCol {
+	--columns: 1;
+}
+.twoCol {
+	--columns: 2;
+}
+.threeCol {
+	--columns: 3;
+}
+.fourCol {
+	--columns: 4;
+}
+
+.panelContainer {
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(var(--columns), 1fr);
+	grid-gap: 5px;
+	margin-bottom: 5px;
+}
+
+.panel {
+	padding: 10px;
+	background: #A7CAB1;
+	border-radius: 10px;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.inventoryItem {
+	cursor: default;
+}
+
+.invItemName {
+	text-decoration: underline;
+}
+
+.tabContainer {
+	display: flex;             /* Make this div a flex container */
+	padding: 0;
+	padding-left: 10px;
+	margin-bottom: 0;
+}
+
+.tab {
+	border: 0;
+	background: #88B7B5;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-size: 15px;
+	height: 30px;
+	
+	
+	/* Set margin for all tab elements */
+	margin: auto 1px;  
+	
+	
+	/* override bottom margin to eliminate the space below the NOT SELECTED tabs */
+	margin-bottom: 0px; 
+}
+
+
+.tab.selected {
+	height: 35px;
+	margin-top: 5px;
+	transition: height 0.2s, margin-top 0.2s;
+}
+
+.tab.locked {
+	filter: grayscale(100%);
+}
+
+.tab:hover:not(.locked) {
+	background: #98cdca;
+	transition: background 0.2s;
+}
+
+.tabContentsContainer { margin-top: 0; }
+
+.tabContents {}
+
+.hide {
+	display: none !important;
+}
+
+.box {
+	padding: 10px;
+	background: #A7CAB1;
+	border-radius: 10px;
+}

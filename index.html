@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Apocalypse 101</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h1>Apocalypse 101</h1>
+	<div id="menu">
+		<div class="tabContainer">
+			<button class="tab selected" data-tabgroup="main" data-tab="inventory">Inventory</button>
+			<button class="tab" data-tabgroup="main" data-tab="location">Location</button>
+			<button class="tab locked" data-tabgroup="main" data-tab="research">???</button>
+			<button class="tab locked" data-tabgroup="main" data-tab="recruits">???</button>
+			<button class="tab locked" data-tabgroup="main" data-tab="training">???</button>
+		</div>
+		<div class="tabContentsContainer">
+			<div class="tabContents box" data-tabgroup="main" data-tab="inventory">
+				<h1>Inventory</h1>
+			</div>
+			<div class="tabContents box" data-tabgroup="main" data-tab="location">
+				<h1>Location</h1>
+			</div>
+		</div>
+	</div>
+	<div id="tutorial" class="hide box"></div>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script src="data/items.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

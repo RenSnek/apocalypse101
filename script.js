@@ -102,5 +102,13 @@ function tutorialContinue(increment=true) {
 			steps[i].classList.add("hide")
 		}
 	}
+	if (tutorialStep == steps.length - 1) {
+		document.getElementById("tutorialContinue").innerHTML = "Play"
+	}
+	if (!stepShown) {
+		document.getElementById("menu").classList.remove("hide");
+		document.getElementById("tutorial").classList.add("hide");
+	}
+
 }
 tutorialContinue(false)

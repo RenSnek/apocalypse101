@@ -95,7 +95,6 @@ function tutorialContinue(increment=true) {
 	var steps = document.getElementsByClassName("tutorial-step");
 	var stepShown = false
 	for (var i = 0; i < steps.length; i++) {
-		alert(steps[i].id.slice(9))
 		if (steps[i].id.slice(9) == tutorialStep){
 			steps[i].classList.remove("hide")
 			stepShown = true

@@ -32,6 +32,10 @@ body {
 	margin-bottom: 5px;
 }
 
+.nobg {
+	background: rgba(0,0,0,0) !important;
+}
+
 .panel {
 	padding: 10px;
 	background: #A7CAB1;

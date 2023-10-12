@@ -2,6 +2,7 @@ var firstPlaythrough = false;
 var tutorialCompleted = true;
 var lastPlayed;
 var inventory = [];
+var tutorialStep = 0
 
 function loadCookieData() {
 	if (Cookies.get("lastPlayed")) {
@@ -86,3 +87,20 @@ if (!tutorialCompleted) {
 	document.getElementById("menu").classList.add("hide");
 	document.getElementById("tutorial").classList.remove("hide");
 }
+
+function tutorialContinue(increment=true) {
+	if (increment) {
+		tutorialStep += 1
+	}
+	var steps = document.getElementsByClassName("tutorial-step");
+	var stepShown = false
+	for (var i = 0; i < steps.length; i++) {
+		if (steps[i].id.slice(9) == i){
+			steps[i].classList.remove("hide")
+			stepShown = true
+		} else {
+			steps[i].classList.add("hide")
+		}
+	}
+}
+tutorialContinue(false)

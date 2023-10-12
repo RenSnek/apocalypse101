@@ -96,7 +96,7 @@ function tutorialContinue(increment=true) {
 	var stepShown = false
 	for (var i = 0; i < steps.length; i++) {
 		alert(steps[i].id.slice(9))
-		if (steps[i].id.slice(9) == i){
+		if (steps[i].id.slice(9) == String(i)){
 			steps[i].classList.remove("hide")
 			stepShown = true
 		} else {

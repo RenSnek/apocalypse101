@@ -12,8 +12,15 @@ body {
 
 button {
 	border: 0;
-	padding: 2px;
+	padding: 4px;
+	font-size: 15px;
+	margin-top: 5px;
 	background-color: #88B7B5;
+}
+
+button:hover {
+	background: #98cdca;
+	transition: background 0.2s;
 }
 
 .oneCol {

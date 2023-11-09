@@ -10,6 +10,12 @@ body {
 	padding: 10px;
 }
 
+button {
+	border: 0;
+	padding: 2px;
+	background-color: #88B7B5;
+}
+
 .oneCol {
 	--columns: 1;
 }
